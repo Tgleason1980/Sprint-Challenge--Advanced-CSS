@@ -20,3 +20,24 @@
     color:@color;
     background-color: @bgcolor;
 }
+.flex-media(@display, @direction) {
+    @media @phone {
+        display: @display;
+        flex-direction: @direction;
+    }
+}
+.media-width(@width){
+    @media @phone {
+        width: @width;
+    }
+}
+.media-hide() {
+    @media @phone {
+        .sky{
+            display: none;
+        }
+            .launch{
+                display: none;
+        }
+    }
+}
